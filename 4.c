@@ -3,6 +3,7 @@
 
 int main(int argc, char **argv)
 {
+    printf("Hello world!\n");
     char name[255];
 
     printf("Enter your name: ");
@@ -10,6 +11,6 @@ int main(int argc, char **argv)
     printf("length = %d\n", strlen(name)); /* debug line */
     name[strlen(name)-1] = '\0'; /* remove the newline at the end */
 
-    printf("Bye, sweety %s!\n" name);
+    printf("Bye %s!\n", name);
     return 0;
 }
